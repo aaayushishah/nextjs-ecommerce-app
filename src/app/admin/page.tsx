@@ -34,9 +34,22 @@ const getCustomerDetails = async () => {
         : orderSum._sum.pricePaidInCents || 0 / customerCount,
   };
 };
+const getProductDetails = async () => {
+  const [active, inActive] = await Promise.all([
+    db.product.count({ where: { isAvailableForPurchase: true } }),
+    db.product.count({ where: { isAvailableForPurchase: false } }),
+  ]);
+  return {
+    active: active || 0,
+    inActive: inActive || 0,
+  };
+};
 const AdminDashboard = async () => {
-  const salesDetails = await getSalesData();
-  const customerDetails = await getCustomerDetails();
+  const [salesDetails, customerDetails, productDetails] = await Promise.all([
+    getSalesData(),
+    getCustomerDetails(),
+    getProductDetails(),
+  ]);
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <DashboardCard
@@ -48,6 +61,11 @@ const AdminDashboard = async () => {
         title="Customer"
         subTitle={customerDetails.average + " Average value"}
         body={customerDetails.count + " total customers"}
+      />
+      <DashboardCard
+        title="Active Product"
+        subTitle={productDetails.inActive + " Inactive products"}
+        body={productDetails.active + " active"}
       />
     </div>
   );
