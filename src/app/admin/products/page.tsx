@@ -81,7 +81,7 @@ const ProductsTable = async () => {
                 ) : (
                   <>
                     <span className="sr-only">Not available</span>
-                    <XCircle />
+                    <XCircle className="stroke-destructive" />
                   </>
                 )}
               </TableCell>
@@ -96,7 +96,7 @@ const ProductsTable = async () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem asChild>
-                      <a href={`/admin/product/${product.id}/download`}>
+                      <a href={`/admin/products/${product.id}/download`}>
                         Download
                       </a>
                     </DropdownMenuItem>

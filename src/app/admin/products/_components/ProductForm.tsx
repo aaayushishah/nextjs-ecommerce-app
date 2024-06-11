@@ -4,16 +4,24 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import React, { useState } from "react";
-import { addProduct } from "../../_actions/products";
-import { useFormStatus } from "react-dom";
+import { addProduct, editProduct } from "../../_actions/products";
+import { useFormState, useFormStatus } from "react-dom";
+import { Product } from "@prisma/client";
 
-const ProductForm = () => {
-  const [price, setPrice] = useState<number>();
+const ProductForm = ({ product }: { product?: Product | null }) => {
+  const [price, setPrice] = useState<number | undefined>(product?.priceInCents);
+
   return (
     <form action={addProduct} className="space-y-8">
       <div className="space-y-2">
         <Label htmlFor="name">Name</Label>
-        <Input type="text" id="name" name="name" required />
+        <Input
+          type="text"
+          id="name"
+          name="name"
+          required
+          defaultValue={product?.name}
+        />
       </div>
       <div className="space-y-2">
         <Label htmlFor="price">Price</Label>
@@ -30,15 +38,25 @@ const ProductForm = () => {
       </div>
       <div className="space-y-2">
         <Label htmlFor="sescription">Description</Label>
-        <Textarea id="description" name="description" required />
+        <Textarea
+          id="description"
+          name="description"
+          required
+          defaultValue={product?.description}
+        />
       </div>
       <div className="space-y-2">
         <Label htmlFor="file">File</Label>
-        <Input type="file" id="file" name="file" required />
+        <Input type="file" id="file" name="file" required={product === null} />
       </div>
       <div className="space-y-2">
         <Label htmlFor="image">Image</Label>
-        <Input type="file" id="image" name="image" required />
+        <Input
+          type="file"
+          id="image"
+          name="image"
+          required={product === null}
+        />
       </div>
       <SubmitButton />
     </form>

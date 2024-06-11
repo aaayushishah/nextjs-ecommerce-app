@@ -1,0 +1,70 @@
+{
+  "node": {
+    "109523183bc328137b89a6df22ce99abdd21de1d": {
+      "workers": {
+        "app/admin/products/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fayushi%2FAyushi%20Workspace%2FGoals%2FNextJs%2Fnextjs-ecommerce-app%2Fsrc%2Fapp%2Fadmin%2F_actions%2Fproducts.ts%22%2C%5B%22editProduct%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_3%22%2C%22toggleProductAvailiblity%22%2C%22deleteProduct%22%2C%22addProduct%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/admin/products/page": "action-browser"
+      }
+    },
+    "1784e6210914b55dabdcaba4ad06e58082a45589": {
+      "workers": {
+        "app/admin/products/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fayushi%2FAyushi%20Workspace%2FGoals%2FNextJs%2Fnextjs-ecommerce-app%2Fsrc%2Fapp%2Fadmin%2F_actions%2Fproducts.ts%22%2C%5B%22editProduct%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_3%22%2C%22toggleProductAvailiblity%22%2C%22deleteProduct%22%2C%22addProduct%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/admin/products/page": "action-browser"
+      }
+    },
+    "74b842fa21ddd161c6125c12bd5721d306400fb4": {
+      "workers": {
+        "app/admin/products/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fayushi%2FAyushi%20Workspace%2FGoals%2FNextJs%2Fnextjs-ecommerce-app%2Fsrc%2Fapp%2Fadmin%2F_actions%2Fproducts.ts%22%2C%5B%22editProduct%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_3%22%2C%22toggleProductAvailiblity%22%2C%22deleteProduct%22%2C%22addProduct%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/admin/products/page": "action-browser"
+      }
+    },
+    "ac6118ac128b775b2e5b02a901af61d1a0379d31": {
+      "workers": {
+        "app/admin/products/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fayushi%2FAyushi%20Workspace%2FGoals%2FNextJs%2Fnextjs-ecommerce-app%2Fsrc%2Fapp%2Fadmin%2F_actions%2Fproducts.ts%22%2C%5B%22editProduct%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_3%22%2C%22toggleProductAvailiblity%22%2C%22deleteProduct%22%2C%22addProduct%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/admin/products/page": "action-browser"
+      }
+    },
+    "c112518f602814f24ef0036f18055e7bae60f4f3": {
+      "workers": {
+        "app/admin/products/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fayushi%2FAyushi%20Workspace%2FGoals%2FNextJs%2Fnextjs-ecommerce-app%2Fsrc%2Fapp%2Fadmin%2F_actions%2Fproducts.ts%22%2C%5B%22editProduct%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_3%22%2C%22toggleProductAvailiblity%22%2C%22deleteProduct%22%2C%22addProduct%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/admin/products/page": "action-browser"
+      }
+    },
+    "d2a34eab37f6f7d5294bc936c381282ded740551": {
+      "workers": {
+        "app/admin/products/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fayushi%2FAyushi%20Workspace%2FGoals%2FNextJs%2Fnextjs-ecommerce-app%2Fsrc%2Fapp%2Fadmin%2F_actions%2Fproducts.ts%22%2C%5B%22editProduct%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_3%22%2C%22toggleProductAvailiblity%22%2C%22deleteProduct%22%2C%22addProduct%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/admin/products/page": "action-browser"
+      }
+    },
+    "ecfdd35edc25509357dc94fbaf6140f5a34038c1": {
+      "workers": {
+        "app/admin/products/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fayushi%2FAyushi%20Workspace%2FGoals%2FNextJs%2Fnextjs-ecommerce-app%2Fsrc%2Fapp%2Fadmin%2F_actions%2Fproducts.ts%22%2C%5B%22editProduct%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_3%22%2C%22toggleProductAvailiblity%22%2C%22deleteProduct%22%2C%22addProduct%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/admin/products/page": "action-browser"
+      }
+    },
+    "edb3ae46870ba3a35db459b4811be2ff61dffa24": {
+      "workers": {
+        "app/admin/products/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fayushi%2FAyushi%20Workspace%2FGoals%2FNextJs%2Fnextjs-ecommerce-app%2Fsrc%2Fapp%2Fadmin%2F_actions%2Fproducts.ts%22%2C%5B%22editProduct%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_3%22%2C%22toggleProductAvailiblity%22%2C%22deleteProduct%22%2C%22addProduct%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/admin/products/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "iv6hijn4j03Np4KDWsvKyHjiPjjjJ/2yjc7NbIaLgKo="
+}
