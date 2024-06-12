@@ -1,20 +1,35 @@
 {
   "pages": {
-    "/admin/products/page": [
+    "/(customerFacing)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin/products/page.js"
+      "static/chunks/app/(customerFacing)/page.js"
     ],
-    "/admin/layout": [
+    "/(customerFacing)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin/layout.js"
+      "static/chunks/app/(customerFacing)/layout.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/(customerFacing)/products/[id]/purchase/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(customerFacing)/products/[id]/purchase/page.js"
+    ],
+    "/(customerFacing)/products/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(customerFacing)/products/page.js"
+    ],
+    "/(customerFacing)/stripe/purchase-success/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(customerFacing)/stripe/purchase-success/page.js"
     ]
   }
 }

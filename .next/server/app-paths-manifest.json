@@ -1,4 +1,7 @@
 {
-  "/admin/products/[id]/download/route": "app/admin/products/[id]/download/route.js",
-  "/admin/products/page": "app/admin/products/page.js"
+  "/(customerFacing)/products/[id]/purchase/page": "app/(customerFacing)/products/[id]/purchase/page.js",
+  "/(customerFacing)/page": "app/(customerFacing)/page.js",
+  "/(customerFacing)/products/page": "app/(customerFacing)/products/page.js",
+  "/(customerFacing)/stripe/purchase-success/page": "app/(customerFacing)/stripe/purchase-success/page.js",
+  "/(customerFacing)/products/download/[downloadVerificationId]/route": "app/(customerFacing)/products/download/[downloadVerificationId]/route.js"
 }
