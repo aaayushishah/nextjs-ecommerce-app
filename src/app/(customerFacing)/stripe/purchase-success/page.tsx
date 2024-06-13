@@ -9,9 +9,9 @@ import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "");
 const SuccessPage = async ({
-  searchParams: { payment_intent },
+  searchParams: { payment_intent, email },
 }: {
-  searchParams: { payment_intent: string };
+  searchParams: { payment_intent: string; email: string };
 }) => {
   const paymentDetails = await stripe.paymentIntents.retrieve(payment_intent);
   if (paymentDetails.metadata.productId === null) return notFound();
@@ -22,6 +22,23 @@ const SuccessPage = async ({
   if (product === null) return notFound();
 
   const isSucess = paymentDetails.status === "succeeded";
+  if (isSucess) {
+    console.log("email: ", email);
+    const updateCreateQuery = {
+      Order: {
+        create: {
+          productId: paymentDetails.metadata.productId,
+          pricePaidInCents: product.priceInCents,
+        },
+      },
+      email: email as string,
+    };
+    await db.user.upsert({
+      where: { email: email as string },
+      create: updateCreateQuery,
+      update: updateCreateQuery,
+    });
+  }
   return (
     <>
       <div className="max-w-5xl w-full mx-auto space-y-8">
@@ -43,22 +60,6 @@ const SuccessPage = async ({
             <div className="line-clamp-3 text-muted-foreground">
               {product.description}
             </div>
-            {/* <Button className="mt-4" size={"lg"} asChild>
-              {isSucess ? (
-                // <a
-                //   href={`/products/download/${createDownloadVerification(
-                //     product
-                //   )}`}
-                // >
-                //   Download
-                // </a>
-                <a>Download</a>
-              ) : (
-                // <Link href={`/products/${product.id}/purchase`}>Try again</Link>
-                <a>test</a>
-              )}
-              Download
-            </Button> */}
             <Button>
               {isSucess ? (
                 <a
