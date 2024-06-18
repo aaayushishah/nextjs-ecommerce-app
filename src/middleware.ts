@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export const middleware = async (req: NextRequest) => {
-  if (!(await isAuthenticated(req))) {
-    return new NextResponse("Unauthorised user", {
-      status: 401,
-      headers: { "WWW-Authenticate": "Basic" },
-    });
-  }
+  // if (!(await isAuthenticated(req))) {
+  //   return new NextResponse("Unauthorised user", {
+  //     status: 401,
+  //     headers: { "WWW-Authenticate": "Basic" },
+  //   });
+  // }
 };
 const isAuthenticated = async (req: NextRequest) => {
   const authHeader =
